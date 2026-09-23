@@ -18,6 +18,7 @@ If you are developing a production application, we recommend using TypeScript wi
 Home Page
 ---------------
 <img width="1512" height="830" alt="Screenshot 2026-09-23 at 3 51 02 PM" src="https://github.com/user-attachments/assets/8a8a8bb2-3934-462a-b550-661d7f954a44" />
+
 Terminal Feature
 -----------------
 <img width="1512" height="825" alt="Screenshot 2026-09-23 at 3 51 20 PM" src="https://github.com/user-attachments/assets/e60a9f2a-751d-4ba6-8415-fc0949f90bcc" />
