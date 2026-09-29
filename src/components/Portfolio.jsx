@@ -4,9 +4,9 @@ const PROJECTS = [
     name: 'Portfolio',
     images: ['/portfolio-about-page.png', '/portfolio-terminal-mode.png'],
     description:
-      'My portfolio website with a macOS terminal feature to introduce myself and display my work',
+      'My personal website with a macOS terminal feature to for users to interact with and to display my work',
     stack: ['React', 'Vite', 'CSS'],
-    repo: '',
+    repo: 'https://github.com/Salum14/Portfolio',
   },
   {
     year: '2025',

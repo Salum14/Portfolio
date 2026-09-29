@@ -3,11 +3,10 @@ import Nav from './components/Nav.jsx'
 import Info from './components/Info.jsx'
 import Skills from './components/Skills.jsx'
 import Portfolio from './components/Portfolio.jsx'
-import Contact from './components/Contact.jsx'
 import Terminal from './components/Terminal/Terminal.jsx'
 import './App.css'
 
-const TABS = ['info', 'skills', 'portfolio', 'contact']
+const TABS = ['info', 'skills', 'portfolio']
 
 export default function App() {
   const initialTab = TABS.includes(window.location.hash.replace('#', ''))
@@ -16,17 +15,30 @@ export default function App() {
 
   const [activeTab, setActiveTab] = useState(initialTab)
   const [terminalOpen, setTerminalOpen] = useState(false)
+  const [theme, setTheme] = useState(
+    () => localStorage.getItem('theme') || 'dark'
+  )
 
   useEffect(() => {
     window.history.replaceState(null, '', '#' + activeTab)
   }, [activeTab])
 
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
   return (
     <div className="app">
+      <button
+        className="theme-toggle-btn"
+        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        aria-label="Toggle light and dark mode"
+      >
+        {theme === 'dark' ? '☀' : '☾'}
+      </button>
+
       <div className="container identity">
-        <button className="tag-btn" onClick={() => setTerminalOpen(true)}>
-          ~/portfolio
-        </button>
         <h1>Salum Matope</h1>
         <div className="role">
           Software Engineer · Full-Stack · Data Structures · Algorithms
@@ -36,13 +48,12 @@ export default function App() {
       <Nav activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <main className="container">
-        {activeTab === 'info' && <Info />}
+        {activeTab === 'info' && <Info onOpenTerminal={() => setTerminalOpen(true)} />}
         {activeTab === 'skills' && <Skills />}
         {activeTab === 'portfolio' && <Portfolio />}
         {activeTab === 'contact' && <Contact />}
       </main>
 
-      <footer className="fine">© 2026 Salum Matope</footer>
 
       <button
         className="terminal-toggle-btn"

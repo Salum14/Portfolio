@@ -1,34 +1,34 @@
 const SKILL_CATEGORIES = [
   {
-    title: 'LANGUAGES',
+    title: 'Languages',
     items: [
-      { name: 'Java', level: 'proficient' },
-      { name: 'Python', level: 'daily' },
-      { name: 'React', level: 'daily' },
+      { name: 'Java' },
+      { name: 'Python'},
+      { name: 'React'},
     ],
   },
   {
-    title: 'INFRASTRUCTURE',
+    title: 'Frameworks',
     items: [
-      { name: 'AWS', level: 'daily' },
-      { name: 'GCP', level: 'daily' },
-      { name: 'SQL', level: 'proficient' },
+      { name: 'FastAPI'},
+      { name: 'Spring Boot'},
+      { name: 'Flask'},
     ],
   },
   {
     title: 'Databases',
     items: [
-      { name: 'Node.js', level: 'proficient' },
-      { name: 'SQLite', level: 'familiar' },
-      { name: 'Express', level: 'familiar' },
+      { name: 'MongoDB'},
+      { name: 'SQLite'},
+      { name: 'MySQL'},
     ],
   },
   {
-    title: 'TOOLS',
+    title: 'Tools',
     items: [
-      { name: 'Git', level: 'daily' },
-      { name: 'Github', level: 'daily' },
-      { name: 'Vs code', level: 'daily' },
+      { name: 'Git'},
+      { name: 'Github'},
+      { name: 'Vs code'},
     ],
   },
 ]
