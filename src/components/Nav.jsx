@@ -2,6 +2,8 @@ const TABS = [
   { id: 'info', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'portfolio', label: 'Portfolio' },
+  { id: 'resume', label: 'Resume' },
+  
 ]
 
 export default function Nav({ activeTab, setActiveTab }) {

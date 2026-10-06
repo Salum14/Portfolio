@@ -4,12 +4,13 @@ import Info from './components/Info.jsx'
 import Skills from './components/Skills.jsx'
 import Portfolio from './components/Portfolio.jsx'
 import Terminal from './components/Terminal/Terminal.jsx'
+import Resume from './components/Resume.jsx'
 import './App.css'
 
 const TABS = ['info', 'skills', 'portfolio']
 
 export default function App() {
-  const initialTab = TABS.includes(window.location.hash.replace('#', ''))
+  const initialTab = TABS.includes(window.location.hash.replace('', ''))
     ? window.location.hash.replace('#', '')
     : 'info'
 
@@ -20,7 +21,7 @@ export default function App() {
   )
 
   useEffect(() => {
-    window.history.replaceState(null, '', '#' + activeTab)
+    window.history.replaceState(null, '', '' + activeTab)
   }, [activeTab])
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function App() {
       <div className="container identity">
         <h1>Salum Matope</h1>
         <div className="role">
-          Software Engineer · Full-Stack · Data Structures · Algorithms
+          Software Engineer | Full-Stack Developer 
         </div>
       </div>
 
@@ -52,6 +53,8 @@ export default function App() {
         {activeTab === 'skills' && <Skills />}
         {activeTab === 'portfolio' && <Portfolio />}
         {activeTab === 'contact' && <Contact />}
+        {activeTab === 'resume' && <Resume />}
+
       </main>
 
 

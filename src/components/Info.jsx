@@ -4,7 +4,7 @@ export default function Info({ onOpenTerminal }) {
   return (
     <section className="panel">
       <p className="lede">
-        Hello, My name is Salum Matope and I like building things. Im a software engineer specialized in full-stack web development, with a focus on backend systems - API design, database structure/alogrithms, and keeping systems reliable as they scale.
+        Hello, My name is Salum Matope and I like building things. Im an aspiring software engineer, interested in full-stack web development, with a passion on backend systems - API design, database structure/alogrithms, and keeping systems reliable as they scale.
       </p>
       <p className="lede">
        
@@ -17,7 +17,7 @@ export default function Info({ onOpenTerminal }) {
         </div>
         <div className="fact">
           <h4>CURRENTLY</h4>
-          <p>Seeking Employment</p>
+          <p>Avalible for Employment</p>
         </div>
         <div className="fact">
           <h4>FOCUS</h4>
