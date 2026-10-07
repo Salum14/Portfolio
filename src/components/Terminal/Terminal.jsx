@@ -31,29 +31,34 @@ function Terminal({ onExit }) {
         } else if (command === "skills") {
             newOutput = `Technical Skills:
             -----------------
-                ★ Languages: Python, javaScript, Java, SQL 
-                ★ Frontend: React, HTML, CSS
-                ★ Backend: Node.js Express.js
-                ★ Databases: MySQL, PostgresSQL
-                ★ Tools: Git, Github, VS Code
+                • Languages: Python, javaScript, Java, SQL 
+                • Frontend: React, HTML, CSS
+                • Backend: Node.js Express.js
+                • Databases: MySQL, PostgresSQL
+                • Tools: Git, Github, VS Code
             
             Soft Skills:
             ------------
-            ★ Problem Solving
-            ★ Critical Thinking
-            ★ Communication
-            ★ Teamwork
-            ★ Adaptability
-            ★ Time Management`;
+            • Problem Solving
+            • Critical Thinking
+            • Communication
+            • Adaptability
+            • Time Management`;
         } else if (command === "projects") {
             newOutput = (
                 <div className="projects-output">
                     <div>Projects:</div>
                     <div>---------</div>
                     <div>
-                        ★ Movie App —{" "}
+                        • Movie App —{" "}
                         <a href="https://github.com/Salum14/Movie-App" target="_blank" rel="noopener noreferrer">
-                            View Project
+                            View 
+                        </a>
+                    </div>
+                    <div>
+                        • Portfolio —{" "}
+                        <a href="https://github.com/Salum14/Portfolio" target="_blank" rel="noopener noreferrer">
+                            View 
                         </a>
                     </div>
                 </div>
@@ -61,15 +66,15 @@ function Terminal({ onExit }) {
         } else if (command === "contact") {
             newOutput = (
                 <div className="contact-output">
-                    <div>Contact</div>
+                    <div>Contact:</div>
                     <div>-------</div>
-                    <div>★ LinkedIn —{" "}
+                    <div>• LinkedIn —{" "}
                         <a href="https://www.linkedin.com/in/salum-matope-33129628a/" target="_blank" rel="noopener noreferrer">View Profile</a>
                     </div>
-                    <div>★ GitHub —{" "}
+                    <div>• GitHub —{" "}
                         <a href="https://github.com/Salum14" target="_blank" rel="noopener noreferrer">View Profile</a>
                     </div>
-                    <div>★ Email —{" "}
+                    <div>• Email —{" "}
                         <a href="mailto:salum.matope14@gmail.com">Send Email</a>
                     </div>
                 </div>
