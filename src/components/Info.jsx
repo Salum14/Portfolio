@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub, FaDownload, FaEnvelope } from 'react-icons/fa'
+import resumePdf from '../assets/resume.pdf'
 
 export default function Info({ onOpenTerminal }) {
   return (
@@ -32,7 +33,7 @@ export default function Info({ onOpenTerminal }) {
         <a href="https://www.linkedin.com/in/salum-matope-33129628a/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={18} />
         </a>
-        <a href="/resume.pdf" download aria-label="Download CV">
+        <a href={resumePdf} download="Salum-Matope-Resume.pdf" aria-label="Download CV">
           <FaDownload size={16} />
         </a>
         <a href="mailto:salum.matope14@gmail.com" aria-label="Email">

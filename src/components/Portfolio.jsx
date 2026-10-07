@@ -1,8 +1,11 @@
+import aboutPage from '../assets/portfolio-about-page.png'
+import terminalMode from '../assets/portfolio-terminal-mode.png'
+
 const PROJECTS = [
   {
     year: '2026',
     name: 'Portfolio',
-    images: ['../portfolio-about-page.png', '../portfolio-terminal-mode.png'],
+    images: [aboutPage, terminalMode],
     description:
       'My personal website with a macOS terminal feature to for users to interact with and to display my work',
     stack: ['React', 'Vite', 'CSS'],
