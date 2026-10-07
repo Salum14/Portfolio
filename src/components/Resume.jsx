@@ -1,4 +1,4 @@
-import { PDFViewer } from '@embedpdf/react-pdf-viewer'
+import { PDFViewer, ZoomMode } from '@embedpdf/react-pdf-viewer'
 import resume from '../assets/resume.pdf'
 
 export default function Resume() {
@@ -9,7 +9,9 @@ export default function Resume() {
           config={{
             src: resume,
             theme: { preference: 'dark' },
+            zoom: { defaultZoomLevel: ZoomMode.FitWidth},
           }}
+          style={{ width: '100%', height: '100%' }}
         />
       </div>
     </section>
