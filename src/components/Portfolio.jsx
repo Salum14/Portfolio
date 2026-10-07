@@ -7,7 +7,7 @@ const PROJECTS = [
     name: 'Portfolio',
     videos: [portfolioDemo],
     description:
-      'My personal website with a macOS terminal feature to for users to interact with and to display my work',
+      'My personal website with a macOS terminal feature for users to interact with and to display my work',
     stack: ['React', 'Vite', 'CSS'],
     repo: 'https://github.com/Salum14/Portfolio',
   },
