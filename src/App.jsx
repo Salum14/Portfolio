@@ -7,7 +7,7 @@ import Terminal from './components/Terminal/Terminal.jsx'
 import Resume from './components/Resume.jsx'
 import './App.css'
 
-const TABS = ['info', 'skills', 'portfolio']
+const TABS = ['info', 'skills', 'portfolio','resume']
 
 export default function App() {
   const initialTab = TABS.includes(window.location.hash.replace('', ''))
