@@ -4,7 +4,7 @@ import resume from '../assets/resume.pdf'
 export default function Resume() {
   return (
     <section className="panel resume-panel">
-      <div style={{ height: '90vh' }}>
+      <div className="resume-viewer">
         <PDFViewer
           config={{
             src: resume,

@@ -1,11 +1,11 @@
-import aboutPage from '../assets/portfolio-about-page.png'
-import terminalMode from '../assets/portfolio-terminal-mode.png'
+import portfolioDemo from '../assets/portfolioDemo.mp4'
+import movieDemo from '../assets/github_profile_demo_optimized.mp4'
 
 const PROJECTS = [
   {
     year: '2026',
     name: 'Portfolio',
-    images: [aboutPage, terminalMode],
+    videos: [portfolioDemo],
     description:
       'My personal website with a macOS terminal feature to for users to interact with and to display my work',
     stack: ['React', 'Vite', 'CSS'],
@@ -14,7 +14,7 @@ const PROJECTS = [
   {
     year: '2025',
     name: '🎥 Movie-app',
-    image: 'https://github.com/user-attachments/assets/1e80c9e5-6446-4e5f-9c3f-6a614958d95a',
+    videos: [movieDemo],
     description:
       ' full-stack movie discovery application enabling users to browse, search, and save their favorite movies',
     stack: ['React', 'Node.js', 'Express', 'TMDB Rest APIs'],
@@ -32,26 +32,17 @@ export default function Portfolio() {
           <div>
             <h3>{project.name}</h3>
 
-            {project.images && (
-              <div className="project-gallery">
-                {project.images.map((src, idx) => (
-                  <img
-                    key={idx}
-                    src={src}
-                    alt={`${project.name} screenshot ${idx + 1}`}
-                    className="project-thumb"
-                  />
-                ))}
-              </div>
-            )}
-
-            {!project.images && project.image && (
-              <img
-                src={project.image}
-                alt={`Screenshot of ${project.name}`}
+            {project.videos && project.videos.map((src, idx) => (
+              <video
+                key= {idx}
+                src= {src}
                 className="project-thumb"
-              />
-            )}
+                autoPlay
+                loop
+                muted
+                playsInline
+                />
+            ))}
 
             <p>{project.description}</p>
             <div className="stack">

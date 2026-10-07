@@ -277,3 +277,44 @@ footer.fine{padding:24px 0; border-top:1px solid var(--border); font-family:var(
   animation:none;
 }
 
+/* ===== Responsive ===== */
+
+/* Tablets and below */
+@media (max-width: 768px){
+  .app{min-height:100dvh;}
+
+  .app .identity{padding:40px 24px 24px;}
+  .app main{padding:36px 24px 64px;}
+
+  .theme-toggle-btn{top:12px; right:12px; width:40px; height:40px; font-size:16px;}
+  .terminal-toggle-btn{bottom:20px; right:20px; width:48px; height:48px; font-size:15px;}
+
+  .terminal-overlay{padding:12px;}
+  .terminal-window{height:75vh; height:75dvh; max-height:640px;}
+}
+
+/* Phones */
+@media (max-width: 600px){
+  .identity .role{font-size:13px;}
+  .lede{font-size:17px;}
+
+  .app nav .tabs{
+    justify-content:flex-start;
+    gap:0;
+    padding:0 8px;
+    scrollbar-width:none;
+  }
+  .app nav .tabs::-webkit-scrollbar{display:none;}
+  .app nav .tabs button{padding:14px 12px; font-size:13px;}
+  .app nav .tabs button:first-child{margin-left:auto;}
+  .app nav .tabs button:last-child{margin-right:auto;}
+
+  .fact-row{grid-template-columns:1fr; gap:20px; margin-top:28px; padding-top:24px;}
+  .links{grid-template-columns:1fr; gap:20px; margin-top:28px;}
+  .icon-group, .terminal-link{grid-column:auto;}
+}
+
+.resume-viewer{height:80vh;}
+@media (max-width: 600px){
+  .resume-viewer{height:70vh; height:70dvh; min-height:420px;}
+}
