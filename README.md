@@ -1,4 +1,4 @@
-<img width="540" height="304" alt="github_profile_demo_under_10mb" src="https://github.com/user-attachments/assets/b525929d-2a34-4bed-a81b-74bae400ef68" />
+<img width="540" height="351" alt="portfolioDemo" src="https://github.com/user-attachments/assets/730ac95e-9bdf-4173-b1cd-33658f821531" />
 
 # React + Vite
 
