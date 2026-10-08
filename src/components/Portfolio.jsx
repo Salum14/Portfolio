@@ -4,10 +4,10 @@ import movieDemo from '../assets/github_profile_demo_optimized.mp4'
 const PROJECTS = [
   {
     year: '2026',
-    name: 'Portfolio',
+    name: '~/Portfolio',
     videos: [portfolioDemo],
     description:
-      'My personal website with a macOS terminal feature for users to interact with and to display my work',
+      'My personal website with an implementation of the macOS-style terminal where users can explore my work',
     stack: ['React', 'Vite', 'CSS'],
     repo: 'https://github.com/Salum14/Portfolio',
   },

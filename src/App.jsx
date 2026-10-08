@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { FaSun, FaMoon } from 'react-icons/fa'
 import Nav from './components/Nav.jsx'
 import Info from './components/Info.jsx'
 import Skills from './components/Skills.jsx'
